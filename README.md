@@ -12,8 +12,11 @@ Step 2 of 4: Import the categories
 
              create ImpCat_All.xml  at  app\etc\modules
               
-Step 3 of 4: create dataflow advanced profile at admin > system >Import/Export > Dataflow - Advanced Profile 
-             and give the Profile Name is 'category import'
+Step 3 of 4: create dataflow advanced profile at 
+
+            admin > system >Import/Export > Dataflow - Advanced Profile 
+            
+            and give the Profile Name is 'category import'
              
 
       //place the following code to its Actions xml box 
@@ -35,7 +38,9 @@ Step 3 of 4: create dataflow advanced profile at admin > system >Import/Export >
            <var name="method">parse</var>
          </action>
 
-Step 4:  Put Categories.csv into var/import/ and
+Step 4:  
+
+         Put Categories.csv into var/import/ and
          removed cat_id colums from csv.
          remove first two rows.
          remove all Default Category/ from categories colunn in Categories.csv
