@@ -1,3 +1,7 @@
+/* 
+Step 1 of 4: Write the following code in category.php and place it to root directory. Run this file at browser http://www.example.com/category.php. It will generate a CSV file  Categories.csv (export all categories).
+*/
+
 <?php
   ini_set("memory_limit","10000M");
   require_once "app/Mage.php";
