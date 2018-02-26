@@ -1,5 +1,5 @@
 /* 
-Step 1 of 4: Write the following code in category.php and place it to root directory. Run this file at browser http://www.example.com/category.php. It will generate a CSV file  Categories.csv (export all categories).
+Step 1 of 4: Write the following code in category.php and place it to root directory. Run this file at browser http://www.example.com/exportCategories.php. It will generate a CSV file  Categories.csv (export all categories).
 */
 
 <?php
