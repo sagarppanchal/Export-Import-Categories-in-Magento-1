@@ -1,0 +1,20 @@
+/* 
+Step 2 of 4: Import the categories
+create config.xml  at app\code\local\ImpCat\Catalog\etc\config.xml
+create Category.php at app\code\local\ImpCat\Catalog\Model\Convert\Adapter\Category.php
+create ImpCat_All.xml  at  app\etc\modules
+config.xml 
+*/
+
+<?xml version="1.0"?>
+<config>
+ <global>
+  <models>
+   <catalog>
+    <rewrite>
+     <convert_adapter_category>ImpCat_Catalog_Model_Convert_Adapter_Category</convert_adapter_category>
+    </rewrite>
+   </catalog>
+  </models>
+ </global>
+</config>
