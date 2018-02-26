@@ -15,24 +15,24 @@ Step 2 of 4: Import the categories
 Step 3 of 4: create dataflow advanced profile at admin > system >Import/Export > Dataflow - Advanced Profile 
              and give the Profile Name is 'category import'
              
-             place the following code to its Actions xml box 
-            
-            <action type="dataflow/convert_adapter_io" method="load">
-               <var name="type">file</var>
-               <var name="path">var/import</var>
-               <var name="filename"><![CDATA[Categories.csv]]></var>
-               <var name="format"><![CDATA[csv]]></var>
-              </action>
-              <action type="dataflow/convert_parser_csv" method="parse">
-               <var name="delimiter"><![CDATA[,]]></var>
-               <var name="enclose"><![CDATA["]]></var>
-               <var name="fieldnames">true</var>
-               <var name="store"><![CDATA[0]]></var>
-               <var name="number_of_records">1</var>
-               <var name="decimal_separator"><![CDATA[.]]></var>
-               <var name="adapter">catalog/convert_adapter_category</var>
-               <var name="method">parse</var>
-             </action>
+place the following code to its Actions xml box 
+
+<action type="dataflow/convert_adapter_io" method="load">
+   <var name="type">file</var>
+   <var name="path">var/import</var>
+   <var name="filename"><![CDATA[Categories.csv]]></var>
+   <var name="format"><![CDATA[csv]]></var>
+ </action>
+ <action type="dataflow/convert_parser_csv" method="parse">
+   <var name="delimiter"><![CDATA[,]]></var>
+   <var name="enclose"><![CDATA["]]></var>
+   <var name="fieldnames">true</var>
+   <var name="store"><![CDATA[0]]></var>
+   <var name="number_of_records">1</var>
+   <var name="decimal_separator"><![CDATA[.]]></var>
+   <var name="adapter">catalog/convert_adapter_category</var>
+   <var name="method">parse</var>
+ </action>
 
 Step 4:  Put Categories.csv into var/import/ and
          removed cat_id colums from csv.
